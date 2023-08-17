@@ -1,0 +1,433 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* The image used */
+  /* background-image: url("./images/new/10.jpeg"); */
+
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* container */
+
+.container-fluid {
+  /* background-color: aqua; */
+  /* margin: 50px; */
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid black; */
+}
+
+/* style first section */
+.first_section {
+  position: relative;
+  width: 100%;
+  /* height: 110vh; */
+  /* padding: 0px 100px; */
+}
+
+.first_section img {
+  width: 100%;
+  height: 100%;
+}
+
+.first_section h3 {
+  position: absolute;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 6px;
+  padding: 11% 0% 0% 40%;
+  text-align: center;
+  font-size: 50px;
+  color: darkblue;
+}
+
+.first_section p {
+  padding: 20% 0% 0% 63%;
+  font-size: 20px;
+  position: absolute;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.first_section h5 {
+  position: absolute;
+  padding: 16% 0% 0% 38%;
+  color: azure;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  animation: 2s ease-out 0s 1 slideInRight;
+}
+
+#rating {
+  width: 330px;
+  height: 80px;
+  position: absolute;
+  padding-left: 180px;
+  padding-top: 50px;
+  animation: 2s ease-out 0s 1 slideInLeft;
+}
+
+#S-para {
+  padding: 250px 0px 0px 490px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  animation: 3s ease-out 0s 1 slideInLeft;
+}
+
+button {
+  position: absolute;
+  margin: 500px 0px 0px 640px;
+  padding: 10px;
+  border: 2px solid black;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  animation: 2s ease-out 0s 1 slideInLeft;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  background-color: orange;
+  transition: 1s ease-in;
+}
+
+/* style introduction section */
+.introduction {
+  background-color: rgb(145, 224, 250);
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  /* border: 2px solid black; */
+  box-shadow: 0px 40px 60px 60px rgba(0, 0, 0, 0.2),
+    0px 0px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.introduction h1,
+.types h1 {
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 40px;
+  padding-top: 10px;
+  font-family: sans-serif;
+}
+
+.introduction table {
+  width: 100%;
+}
+
+.container1 {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container1 img {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  padding: 15px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(50, 50, 50);
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  padding: 0 20px;
+}
+
+.container1:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: rgb(249, 242, 242);
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 600;
+}
+
+/* style introduce section */
+.introduction-para {
+  margin: 20px 120px;
+  width: 80%;
+  font-size: 19px;
+  line-height: 25px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  letter-spacing: 1px;
+  border: 2px solid black;
+}
+
+.introduction-para legend {
+  padding-top: 35px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Kanit', sans-serif;
+
+}
+
+.introduction-para h4 {
+  padding: 10px 50px;
+  color: darkblue;
+}
+
+.introduction-para h4::first-letter {
+  font-size: 30px;
+}
+
+.introduction-para iframe {
+  margin-left: 85px;
+  padding: 30px 0px;
+}
+
+/* style room type section */
+
+.types {
+  /* border: 3px solid black; */
+  background-color: aquamarine;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 40px 60px 60px rgba(0, 0, 0, 0.2),
+    0px 0px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.types h1{
+    text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 40px;
+  padding-top: 10px;
+  font-family: sans-serif;
+}
+
+
+.types table {
+  width: 100%;
+  animation: 2s ease-out 0s 1 slideInLeft;
+  font-size: 20px;
+  padding: 25px;
+}
+
+.types table img {
+  width: 80%;
+  height: 55vh;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.types table img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.types table li{
+    line-height: 35px;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+/* More item section */
+.more-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(254, 254, 254);
+}
+.more-item table {
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.more-item table tr td {
+  padding: 50px;
+  margin: 20px;
+  /* background-color: aqua; */
+  cursor: pointer;
+}
+
+.more-item table tr td:hover {
+  box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.2),
+    0px 10px 8px 0px rgba(0, 0, 0, 0.19);
+  background-color: rgb(237, 237, 237);
+}
+
+.more-item img {
+  width: 30%;
+  height: 20vh;
+
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+
+/* style footer section */
+footer {
+  background-color: rgb(5, 5, 5);
+  color: aliceblue;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  /* box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.2), 0px 10px 8px 0px rgba(0, 0, 0, 0.19); */
+}
+
+/* style full image slider */
+/* slider */
+
+.slider {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100vh;
+  margin: 50px;
+}
+
+.slider figure div {
+  float: left;
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+.slider figure img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.slider figure {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+  margin: 0px;
+  animation: anim 30s infinite;
+  -webkit-animation: anim 30s infinite;
+}
+
+/* Add key frame in to animation */
+
+@keyframes anim {
+  0% {
+    left: 0%;
+  }
+
+  10% {
+    left: 0%;
+  }
+
+  12% {
+    left: -100%;
+  }
+
+  22% {
+    left: -100%;
+  }
+
+  24% {
+    left: -200%;
+  }
+
+  34% {
+    left: -200%;
+  }
+
+  36% {
+    left: -300%;
+  }
+
+  46% {
+    left: -300%;
+  }
+
+  48% {
+    left: -200%;
+  }
+
+  58% {
+    left: -200%;
+  }
+
+  60% {
+    left: -100%;
+  }
+
+  70% {
+    left: -100%;
+  }
+
+  72% {
+    left: 0;
+  }
+
+  82% {
+    left: 0;
+  }
+}
+
+
+
+/* add css to the value section */
+.values-class{
+    text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 30px;
+  padding-top: 10px;
+  font-family: sans-serif;
+}
